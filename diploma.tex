@@ -1,0 +1,33 @@
+\documentclass[a4paper,14pt,russian]{extreport}
+\input{header.tex}
+
+\begin{document}
+    
+    %Дипломная работа: \pageref*{LastPage}~с., \totfig~рис., \tottab~табл...
+    
+    \tableofcontents
+    
+    \newpage
+    \likechapter{Введение}
+    \subfile{sections/1_section}
+    
+    \chapter{НАЗВАНИЕ ПЕРВОЙ ГЛАВЫ}
+    \subfile{sections/2_section}
+    
+    \chapter{НАЗВАНИЕ ВТОРОЙ ГЛАВЫ}
+    \subfile{sections/3_section}
+    
+    \newpage
+    \likechapter{Заключение}
+    \subfile{sections/4_section}
+    
+    \newpage
+    \subfile{sections/5_section}
+    
+    \newpage
+    \listoffigures
+    \newpage
+    \listoftables
+    \newpage
+    \listoflistings
+\end{document}
